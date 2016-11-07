@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+Copyright 2016 IBM Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>Sample App 7.1</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<!-- <link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    	</head>
+    	<body style="display: none;">
+    		<div id="header">
+				<h1>Sample App 7.1</h1>
+			</div>
+    		
+    		<div id="wrapper">
+	    		<div id="AppDiv">			
+					<input type="button" id="balanceButton" value="Get Balance" />
+					<input type="button" id="transferButton" value="Transfer Money" />
+					<input type="button" id="logoutButton" value="Logout" />
+					<div id="ResponseDiv"></div>
+				</div>
+	
+				<div id="AuthDiv" style="display: none">
+					<div id="loginForm">
+						<input type="text" placeholder="Enter username" id="AuthUsername" /><br />
+						<input type="password" placeholder="Enter password" id="AuthPassword" /><br/>		
+						<input type="button" class="formButton" id="AuthSubmitButton" value="Login" /><input type="button" class="formButton" id="AuthCancelButton" value="Cancel" />
+					</div>
+				</div> 
+				<div id="PinCodeDiv" style="display: none">
+					<div id="pinCodeForm">
+						<input type="text" placeholder="Enter pin code" id="PinCode" /><br />
+						<input type="button" class="formButton" id="PinCodeSubmitButton" value="Enter" /><input type="button" class="formButton" id="PinCodeCancelButton" value="Cancel" />
+						<p id="pinCodeErrorMessage"></p>
+					</div>
+				</div> 
+			</div>   	
+    		<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script> 
+    		<script src="js/UserLoginChallengeHandler.js"></script>
+    		<script src="js/PinCodeChallengeHandler.js"></script>
+    	</body>
+</html>
