@@ -1,3 +1,3 @@
 class Dummy {
-  aaa
+  aaaa
 }
