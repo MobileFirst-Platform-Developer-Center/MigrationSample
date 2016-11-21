@@ -1,4 +1,4 @@
-# Migration Sample - from 7.1 to 8.0
+# Authentication and Security Migration Sample
 
 This sample accompanies the tutorial on [migrating authentication and security to
 MobileFirst V8.0](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/upgrading/migrating-security/).
